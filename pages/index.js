@@ -13,7 +13,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Dashboard />
-      <h1>data.title</h1>
     </div>
   )
 }
