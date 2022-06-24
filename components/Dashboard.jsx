@@ -3,22 +3,22 @@ import data from '../data.json'
 import Image from 'next/image'
 
 function Dashboard() {
-    let content = 0
+    // let content = 0
     
-    data.map((dat) => {
-        console.log(dat.timeframes.daily.previous)
-    })
+    // data.map((dat) => {
+    //     console.log(dat.timeframes.daily.previous)
+    // })
     return (
         <div className='flex flex-col mx-4 my-12 '>
             <div className=''>
                 {/* start of profile */}
-                    <div className='flex flex-col justify-center overflow-hidden '>
-                        <div className='py-10 flex flex-row justify-centertext-white bg-violet-800 rounded-lg shadow-xl
+                    <div className='flex flex-col justify-center overflow-hidden text-white md:p44'>
+                        <div className='py-12 px-2  flex flex-row justify-centertext-white bg-violet-800 rounded-lg shadow-xl
                         md:flex-col '>
-                            <Image className='md:w-4/5' src='/images/image-jeremy.png' alt='profile-image' width={70} height={70}/>
-                            <div className='mx-7 justify-start'>
-                                <p className='flex flex-col text-xs'>Reported for</p>
-                                <h2 className='flex flex-col text-xl'>jeremy Robson</h2>
+                            <Image className='' src='/images/image-jeremy.png' alt='profile-image' width={50} height={50}/>
+                            <div className='px-4 justify-start'>
+                                <p className=' text-xs'>Reported for</p>
+                                <h2 className=' text-xl'>jeremy Robson</h2>
                             </div>
                         </div>
 
@@ -31,6 +31,9 @@ function Dashboard() {
                         </div>
                     </div>
                 {/* end of profile */}
+
+
+
             </div>
         </div>
     )
