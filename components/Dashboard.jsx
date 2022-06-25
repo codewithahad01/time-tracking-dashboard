@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data.json'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Dashboard() {
     // let content = 0
@@ -17,8 +18,8 @@ function Dashboard() {
                         md:flex-col '>
                             <Image className='' src='/images/image-jeremy.png' alt='profile-image' width={50} height={50}/>
                             <div className='px-4 justify-start'>
-                                <p className=' text-xs'>Reported for</p>
-                                <h2 className=' text-xl'>jeremy Robson</h2>
+                                <p className='text-xs'>Reported for</p>
+                                <h2 className='text-xl'>jeremy Robson</h2>
                             </div>
                         </div>
 
