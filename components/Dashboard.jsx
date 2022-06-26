@@ -10,8 +10,8 @@ function Dashboard() {
     //     console.log(dat.timeframes.daily.previous)
     // })
     return (
-        <div className='flex flex-col mx-4 my-12 '>
-            <div className=''>
+        <div className='container mx-auto flex flex-col  my-12 '>
+            <div className='box-border'>
                 {/* start of profile */}
                     <div className='flex flex-col justify-center overflow-hidden text-white md:p44'>
                         <div className='py-12 px-2  flex flex-row justify-centertext-white bg-violet-800 rounded-lg shadow-xl
@@ -32,10 +32,10 @@ function Dashboard() {
                         </div>
                     </div>
                 {/* end of profile */}
-
-
+ 
 
             </div>
+
         </div>
     )
 }
