@@ -8,12 +8,12 @@ class MyDocument extends Document {
             <Html leng="en">
                 <Head>
                     
-                    <link
+                    {/* <link
                         rel="preload"
                         href="/fonts/IBMPlexSans-SemiBold.ttf"
                         as="font"
                         crossOrigin="ananymous"
-                    ></link>
+                    ></link> */}
                 </Head>
                 <body className="dark:bg-gray-900">
                     <Main></Main>
