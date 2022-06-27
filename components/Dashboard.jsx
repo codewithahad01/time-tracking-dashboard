@@ -7,8 +7,8 @@ function Dashboard() {
     let content = 0
     
     data.map((dat) => {
-        content = dat.split(' ')
-        console.log(dat.title[0])
+        return dat.dat
+        
     })
     return (
         <div className='container mx-auto flex flex-col  my-12 px-6'>
@@ -26,9 +26,9 @@ function Dashboard() {
         
                         <div className='px-4 bg-blue-900 rounded-b-lg text-sm '>
                             <ul className='flex justify-center'>
-                                <li className='px-3 py-7 text-white'><Link href='#home' aria-disabled><a >Daily</a></Link></li>
-                                <li className='px-4 py-7 text-white'><Link href='#home'><a >Weekly</a></Link></li>
-                                <li className='px-4 py-7 text-white'><Link href='#home'><a >Monthly</a></Link></li>
+                                <li className='px-3 py-7 text-white'><Link href='#home' aria-disabled><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Daily</a></Link></li>
+                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Weekly</a></Link></li>
+                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-'>Monthly</a></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -41,7 +41,9 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {data.map((detail, index) => {
+                                return detail.title.indexOf()
+                            })} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
