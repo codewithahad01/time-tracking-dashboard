@@ -34,9 +34,9 @@ function Dashboard() {
         
                         <div className='px-4 bg-blue-900 rounded-b-lg text-sm '>
                             <ul className='flex justify-center'>
-                                <li className='px-3 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >{selected.timeframes.daily}</a></Link></li>
-                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Weekly</a></Link></li>
-                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse'>Monthly</a></Link></li>
+                                <li key={data} className='px-3 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Daily</a></Link></li>
+                                <li key={data} className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Weekly</a></Link></li>
+                                <li key={data} className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse'>Monthly</a></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -53,8 +53,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected.timeframes.weekly.previous} </span>
                         </div>
                     </div>
                 </div>
@@ -69,8 +69,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected2.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected2.timeframes.weekly.previous}hrs</span>
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected3.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected3.timeframes.weekly.previous} hrs</span>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected4.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected.timeframes.weekly.previous} hrs</span>
                         </div>
                     </div>
                 </div>
@@ -117,8 +117,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected5.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected5.timeframes.weekly.previous} hrs</span>
                         </div>
                     </div>
                 </div>
@@ -133,8 +133,8 @@ function Dashboard() {
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
-                            <span className='text-white text-4xl md:text-6xl md:mb-4'>32 hrs</span>
-                            <span className='text-white opacity-60'>Last Week-36hrs</span>
+                            <span className='text-white text-4xl md:text-6xl md:mb-4'>{selected6.timeframes.weekly.current} hrs</span>
+                            <span className='text-white opacity-60'>Last Week-{selected.timeframes.weekly.previous} hrs</span>
                         </div>
                     </div>
                 </div>      
