@@ -4,8 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 function Dashboard() {
+
+
+    let selected = data.find(item => item.id === 1)
+    let selected2 = data.find(item => item.id === 2)
+    let selected3 = data.find(item => item.id === 3)
+    let selected4 = data.find(item => item.id === 4)
+    let selected5 = data.find(item => item.id === 5)
+    let selected6 = data.find(item => item.id === 6)
     
-    console.log(data.timeframes)
+    
+    // let selected = data.map(items => items === items.id === items.id ? title : null)
+    
+
     
     return (
         <div className='container mx-auto flex flex-col  my-12 px-6'>
@@ -23,7 +34,7 @@ function Dashboard() {
         
                         <div className='px-4 bg-blue-900 rounded-b-lg text-sm '>
                             <ul className='flex justify-center'>
-                                <li className='px-3 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Daily</a></Link></li>
+                                <li className='px-3 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >{selected.timeframes.daily}</a></Link></li>
                                 <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Weekly</a></Link></li>
                                 <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse'>Monthly</a></Link></li>
                             </ul>
@@ -38,9 +49,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map((detail, index) => {
-                                return detail.title.indexOf()
-                            })} </span>
+                            <span className='text-stone-200 text-xl '> {selected.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
@@ -56,7 +65,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {selected2.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
@@ -72,7 +81,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {selected3.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
@@ -88,7 +97,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {selected4.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
@@ -104,7 +113,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {selected5.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
@@ -120,7 +129,7 @@ function Dashboard() {
                     </div>
                     <div className='bg-blue-900 p-4 rounded-t-xl'>
                         <div className='flex justify-between  '>
-                            <span className='text-stone-200 text-xl '> {data.map(record => {return record.title[0]})} </span>
+                            <span className='text-stone-200 text-xl '> {selected6.title} </span>
                             <Image className='h-2' src='/images/icon-ellipsis.svg' alt='elipsis image' layout='fixed' width={35} height={10} />
                         </div>
                         <div className='flex  justify-between pt-6 pb-4 md:flex-col md:text-center '>
