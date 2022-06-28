@@ -4,11 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 function Dashboard() {
-    let content = 0
     
-    data.map((dat) => {
-        return dat.dat
-    })
+    console.log(data.timeframes)
+    
     return (
         <div className='container mx-auto flex flex-col  my-12 px-6'>
             <div className=''>
