@@ -1,8 +1,8 @@
 # time-tracking-dashboard
 The dashboard Switch between viewing Daily, Weekly, and Monthly stats, developed by Nextjs and Tailwindcss 
 
-![Design preview for the Time tracking dashboard coding challenge](./design/one.png)
-![Design preview for the Time tracking dashboard coding challenge](./design/two.png)
+![Design preview for the Time tracking dashboard coding challenge](.public/design/one.png)
+![Design preview for the Time tracking dashboard coding challenge](.public/design/two.png)
 
 
 
