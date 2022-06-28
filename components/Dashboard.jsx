@@ -8,7 +8,6 @@ function Dashboard() {
     
     data.map((dat) => {
         return dat.dat
-        
     })
     return (
         <div className='container mx-auto flex flex-col  my-12 px-6'>
@@ -26,9 +25,9 @@ function Dashboard() {
         
                         <div className='px-4 bg-blue-900 rounded-b-lg text-sm '>
                             <ul className='flex justify-center'>
-                                <li className='px-3 py-7 text-white'><Link href='#home' aria-disabled><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Daily</a></Link></li>
+                                <li className='px-3 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Daily</a></Link></li>
                                 <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse' >Weekly</a></Link></li>
-                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-'>Monthly</a></Link></li>
+                                <li className='px-4 py-7 text-white'><Link href='#home'><a className='hover:font-extrabold hover:text-xl md:animate-pulse'>Monthly</a></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -68,8 +67,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-
-
+                
                 <div className='mt-10 shadow-xl relative'>
                     <div className='bg-red-400 rounded-t-xl'>
                         <Image className='animate-bounce opacity-40 ' src='/images/icon-study.svg' alt='work image' width={80} height={80} />
@@ -85,7 +83,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-
+                
                 <div className='mt-10 shadow-xl '>
                     <div className='bg-green-400 rounded-t-xl'>
                         <Image className='animate-bounce opacity-40 ' src='/images/icon-exercise.svg' alt='work image' width={80} height={80} />
